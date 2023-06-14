@@ -6,6 +6,8 @@ const router = express.Router();
 const LivroController = require('./controllers/LivroController');
 
 const AutorController = require('./controllers/AutorController');
+
+const UsuarioController = require('./controllers/UsuarioController');
 /*#############################################################
 
                     ROUTERS ADMIN
@@ -16,6 +18,8 @@ const AutorController = require('./controllers/AutorController');
 router.get('/api/livro', LivroController.index);
 
 router.get('/api/autor', AutorController.index);
+
+router.get('/api/usuario', UsuarioController.index);
 
 
 
